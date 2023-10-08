@@ -5,18 +5,3 @@ html {
 body {
   font-family: "Raleway", sans-serif;
 }
-
-.app {
-  width: auto;
-  height: calc(100vh - 20px);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: auto;
-}
-
-@media screen and (min-width: 992px) {
-  .app {
-    width: auto;
-  }
-}

@@ -1,3 +1,12 @@
+.app {
+  width: auto;
+  height: calc(100vh - 20px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto;
+}
+
 .homeSection {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -5,4 +14,10 @@
   justify-content: start;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .app {
+    width: auto;
+  }
 }
