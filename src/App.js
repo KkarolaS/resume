@@ -1,7 +1,14 @@
-import "./App.css";
+import classes from "./App.module.css";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => {
+  return (
+    <div className={classes.app}>
+      <Navbar />
+      <Home />
+    </div>
+  );
+};
 
 export default App;

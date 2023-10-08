@@ -1,0 +1,41 @@
+.projectsWrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0.8;
+}
+
+.projectsWrapper:hover {
+  opacity: 1;
+}
+
+.projectPhoto {
+  width: auto;
+  height: auto;
+}
+
+.infoWrapper {
+  color: white;
+  background-color: #a7a7a7;
+  width: auto;
+  padding: 16px;
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.projectInfo {
+  font-size: 16px;
+}
+
+.projectInfo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.description {
+  font-weight: 800;
+}
