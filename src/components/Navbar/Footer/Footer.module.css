@@ -1,5 +1,6 @@
 .footer {
-  margin-top: 50vh;
+  margin-top: 380px;
+  color: rgb(17, 57, 70, 0.7);
 }
 .container {
   display: flex;
@@ -15,8 +16,10 @@
 }
 
 .contactContainer a {
-  color: #757575;
+  color: rgb(17, 57, 70, 0.7);
   text-decoration: none;
 }
 
-/* poprawic footer */
+.contactContainer a:hover {
+  color: rgb(188, 163, 127);
+}

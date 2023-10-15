@@ -1,7 +1,16 @@
-const SocialLogo = ({ className }) => {
+import classes from "./SocialLogo.module.css";
+
+const SocialLogo = ({ className, isLinkedIn, link }) => {
   return (
     <div>
-      <i className={className} alt="logo"></i>
+      <a
+        className={isLinkedIn ? classes.lkLink : classes.xLink}
+        href={link}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <i className={className} alt="logo"></i>
+      </a>
     </div>
   );
 };

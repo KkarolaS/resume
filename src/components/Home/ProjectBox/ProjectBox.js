@@ -5,14 +5,15 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, description }) => {
     <div className={classes.projectsWrapper}>
       <img src={imageSrc} className={classes.projectPhoto} alt="project" />
       <div className={classes.infoWrapper}>
-        <p className={`${classes.projectInfo} + ${classes.description}`}>
-          {description}
+        <p className={classes.projectInfo}>
+          <a href={gitHubLink} rel="noreferrer" target={"_blank"}>
+            🔗 Click and see on GitHub
+          </a>
         </p>
         <p className={classes.projectInfo}>
-          <a href={gitHubLink}>🔗 Click and see on GitHub</a>
-        </p>
-        <p className={classes.projectInfo}>
-          <a href={netlifyLink}>🔗 Click and see on Netlify</a>
+          <a href={netlifyLink} rel="noreferrer" target={"_blank"}>
+            🔗 Click and see on Netlify
+          </a>
         </p>
       </div>
     </div>
