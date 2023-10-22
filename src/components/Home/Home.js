@@ -14,7 +14,6 @@ const Home = () => {
             imageSrc={item.src}
             gitHubLink={item.gitHubLink}
             netlifyLink={item.netlifyLink}
-            description={item.description}
           />
         ))}
       </section>

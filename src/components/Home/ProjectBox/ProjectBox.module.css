@@ -1,6 +1,6 @@
 .projectsWrapper {
   max-width: 433px;
-  max-height: 495px;
+  max-height: 520px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -11,36 +11,32 @@
   opacity: 1;
 }
 
-.projectPhoto {
-  max-width: 433px;
-  max-height: 510px;
-  filter: grayscale(70%);
-  object-fit: cover;
-  object-position: 100% 0%;
-}
-
-.projectPhoto:hover {
-  filter: none;
-}
-
 .infoWrapper {
-  min-width: 230px;
-  color: white;
-  background-color: rgba(167, 167, 167, 0.7);
   padding: 16px;
   position: absolute;
-  bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.projectInfo {
-  font-size: 16px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .projectInfo a {
-  text-decoration: none;
-  color: white;
+  color: rgb(63, 193, 201);
   cursor: pointer;
+  position: relative;
+  z-index: 21;
+}
+
+a .projectPhoto {
+  width: 100%;
+  max-height: 520px;
+  filter: grayscale(65%);
+  object-fit: cover;
+  object-position: 100% 0%;
+  transition: transform 1.5s;
+}
+
+a .projectPhoto:hover {
+  filter: none;
+  transform: scale(1.05);
+  position: relative;
+  z-index: 21;
 }

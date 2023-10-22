@@ -1,16 +1,14 @@
-.homePage {
+.aboutPage {
   max-width: 1600px;
   height: auto;
   padding-bottom: 17px;
   background-color: rgb(245, 245, 245);
 }
 
-.homeSection {
+.aboutSection {
   height: auto;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  justify-content: start;
   margin-left: 300px;
+  display: flex;
 }
 
 @media screen and (min-width: 992px) {

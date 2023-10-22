@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <ul className={classes.menu}>
         <li className={classes.menuItem}>
-          <a href="/home">PORTFOLIO</a>
+          <a href="/">PORTFOLIO</a>
         </li>
         <li className={classes.menuItem}>
           <a href="/about">ABOUT ME</a>

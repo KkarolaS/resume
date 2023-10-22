@@ -1,0 +1,14 @@
+.boxWrapper {
+  width: 800px;
+  height: calc(100vh - 40px);
+}
+
+.infoBox {
+  width: 800px;
+  height: 286px;
+  margin: 20px;
+  box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
+  -webkit-box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
+  -moz-box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
+  border-radius: 5px;
+}

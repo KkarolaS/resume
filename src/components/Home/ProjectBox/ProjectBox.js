@@ -1,18 +1,17 @@
 import classes from "./ProjectBox.module.css";
 
-const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, description }) => {
+const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
   return (
     <div className={classes.projectsWrapper}>
-      <img src={imageSrc} className={classes.projectPhoto} alt="project" />
+      <p className={classes.projectInfo}>
+        <a href={netlifyLink} rel="noreferrer" target={"_blank"}>
+          <img src={imageSrc} className={classes.projectPhoto} alt="project" />
+        </a>
+      </p>
       <div className={classes.infoWrapper}>
         <p className={classes.projectInfo}>
           <a href={gitHubLink} rel="noreferrer" target={"_blank"}>
-            🔗 Click and see on GitHub
-          </a>
-        </p>
-        <p className={classes.projectInfo}>
-          <a href={netlifyLink} rel="noreferrer" target={"_blank"}>
-            🔗 Click and see on Netlify
+            <i className="fa-brands fa-github fa-2xl"></i>{" "}
           </a>
         </p>
       </div>
