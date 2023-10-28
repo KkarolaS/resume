@@ -27,17 +27,15 @@ const AboutMeSection = () => {
           <h3 className={classes.title}>
             <i className="fa-solid fa-gears fa-lg"></i>Personal Skills
           </h3>
-          <p>
-            <ul className={classes.skillsList}>
-              <li>Quick learnings skills</li>
-              <li>Time managment skills</li>
-              <li>Good communication skills</li>
-              <li>Team working</li>
-              <li>Ability to work under pressure</li>
-              <li>Ability to deal with conflict situation</li>
-              <li>Ability to lead projects</li>
-            </ul>
-          </p>
+          <ul className={classes.skillsList}>
+            <li>Quick learnings skills</li>
+            <li>Time managment skills</li>
+            <li>Good communication skills</li>
+            <li>Team working</li>
+            <li>Ability to work under pressure</li>
+            <li>Ability to deal with conflict situation</li>
+            <li>Ability to lead projects</li>
+          </ul>
         </div>
         <div className={classes.languageInfo}>
           <h3 className={classes.title}>

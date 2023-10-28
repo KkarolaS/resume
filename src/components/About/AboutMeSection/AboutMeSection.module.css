@@ -1,7 +1,6 @@
 .aboutMe {
   width: 400px;
-  height: calc(100vh - 40px);
-  margin: 20px;
+  margin: 20px 20px 20px 0;
   box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
   -webkit-box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
   -moz-box-shadow: 0px 3px 12px -1px rgba(38, 38, 38, 0.74);
@@ -79,8 +78,9 @@
 
 .skillsList {
   font-size: 15px;
-  list-style-type: circle;
+  list-style-type: disc;
   line-height: 1.5;
+  margin-left: 5px;
 }
 
 .skillsList li {
@@ -112,23 +112,3 @@
 .levelGe {
   width: 200px;
 }
-
-/*  <section className={classes.aboutMe}>
-      
-   
-      <div className={classes.skillsWrapper}>
-        <h3 className={classes.skillsTitile}>Personal Skills</h3>
-        <ul>
-          <li>Quick learnings skills</li>
-          <li>Time managments skills</li>
-          <li>Good communication skills</li>
-          <li>Team working</li>
-          <li>Work under pressure</li>
-          <li>Ability to deal with conflict situation</li>
-          <li>Ability to lead projects</li>
-        </ul>
-      </div>
-
-      
-     
-    </section> */

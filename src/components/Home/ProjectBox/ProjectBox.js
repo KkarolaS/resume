@@ -1,6 +1,6 @@
 import classes from "./ProjectBox.module.css";
 
-const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
+const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isHovered }) => {
   return (
     <div className={classes.projectsWrapper}>
       <p className={classes.projectInfo}>
@@ -11,7 +11,10 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
       <div className={classes.infoWrapper}>
         <p className={classes.projectInfo}>
           <a href={gitHubLink} rel="noreferrer" target={"_blank"}>
-            <i className="fa-brands fa-github fa-2xl"></i>{" "}
+            <i
+              style={isHovered ? { transform: "scale(1.2)" } : null}
+              className="fa-brands fa-github fa-2xl"
+            ></i>{" "}
           </a>
         </p>
       </div>
