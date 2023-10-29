@@ -17,7 +17,7 @@
 }
 
 .infoBox:hover {
-  transform: scale(1.01);
+  transform: scale(1.01) rotateZ(0.5deg);
 }
 
 .infoTitle {

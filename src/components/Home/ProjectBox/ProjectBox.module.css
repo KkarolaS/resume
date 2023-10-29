@@ -44,6 +44,3 @@ a .projectPhoto:hover {
 .projectInfo i {
   transition: transform 1.5s;
 }
-/* .biggerGitHubLink i:hover {
-  transform: scale(1.5);
-} */

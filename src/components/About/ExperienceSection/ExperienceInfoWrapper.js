@@ -2,13 +2,32 @@ import classes from "./ExperienceInfoWrapper.module.css";
 import { knowledgeData } from "../../../data/knowledgeData";
 import { educationData } from "../../../data/educationData";
 import { experienceData } from "../../../data/experienceData";
+import whoosh from "../../../assets/sounds/whoosh.wav";
+import { useSound } from "use-sound";
 
 const ExperienceInfoWrapper = () => {
+  const [playWhoosh, { stop }] = useSound(whoosh, {
+    volume: 0.6,
+    interrupt: true,
+  });
+
+  const handleMouseOver = () => {
+    playWhoosh();
+  };
+
+  const handleMouseOut = () => {
+    stop();
+  };
+
   return (
-    <div className={classes.boxWrapper}>
+    <div
+      className={classes.boxWrapper}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
       <div className={classes.infoBox}>
         <h2 className={classes.infoTitle}>
-          <i className="fa-solid fa-gears fa-xl"></i>Knowledge
+          <i className="fa-solid fa-gears fa-xl"></i>Technical Skills
         </h2>
         <ul className={`${classes.list} ${classes.infoList}`}>
           {knowledgeData.map((data) => (
