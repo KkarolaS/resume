@@ -1,7 +1,6 @@
 import classes from "./Navbar.module.css";
-import Footer from "./Footer/Footer";
 
-const Navbar = () => {
+const Navbar = ({ contactLink }) => {
   return (
     <header className={classes.navbar}>
       <div className={classes.titleWrapper}>
@@ -16,8 +15,10 @@ const Navbar = () => {
         <li className={classes.menuItem}>
           <a href="/about">ABOUT ME</a>
         </li>
+        <li className={classes.menuItem}>
+          <a href={contactLink}>CONTACT</a>
+        </li>
       </ul>
-      <Footer />
     </header>
   );
 };

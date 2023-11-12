@@ -1,0 +1,39 @@
+.contact {
+  max-width: 1287px;
+  height: 350px;
+  margin-left: 300px;
+  background-color: rgb(167, 166, 166);
+  color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 100;
+  align-items: center;
+  align-content: space-around;
+}
+
+.contactContainer a {
+  color: rgb(245, 245, 245);
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contactContainer a:hover {
+  color: #fc5185;
+}
+
+.contactTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+}

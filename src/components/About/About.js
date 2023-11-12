@@ -6,7 +6,7 @@ import ExperienceInfoWrapper from "./ExperienceSection/ExperienceInfoWrapper";
 const About = () => {
   return (
     <div className={classes.aboutPage}>
-      <Navbar />
+      <Navbar contactLink={"/"} />
       <section className={classes.aboutSection}>
         <AboutMeSection />
         <ExperienceInfoWrapper />

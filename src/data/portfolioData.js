@@ -38,9 +38,9 @@ export const portfolioData = [
   },
   {
     id: 7,
-    src: require("../assets/image/emojipedia.png"),
+    src: require("../assets/image/noteskepper.png"),
     gitHubLink: "https://github.com/KkarolaS/Empojipedia.git",
-    netlifyLink: "https://emojipedia-react-kkarola.netlify.app/",
+    netlifyLink: "https://github.com/KkarolaS/Notesbook_project_EJS.git",
   },
   {
     id: 8,

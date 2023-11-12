@@ -1,19 +1,24 @@
 import classes from "./ProjectBox.module.css";
 import whoosh from "../../../assets/sounds/whoosh.wav";
 import { useSound } from "use-sound";
+import { useState } from "react";
 
-const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isHovered }) => {
+const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
   const [playWhoosh, { stop }] = useSound(whoosh, {
     volume: 0.6,
     interrupt: true,
   });
 
+  const [isHovered, setIsHovered] = useState(true);
+
   const handleMouseOver = () => {
     playWhoosh();
+    setIsHovered(true);
   };
 
   const handleMouseOut = () => {
     stop();
+    setIsHovered(false);
   };
 
   return (

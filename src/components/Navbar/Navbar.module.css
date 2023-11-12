@@ -1,6 +1,6 @@
 .navbar {
   width: 300px;
-  height: auto;
+  min-height: 100vh;
   position: fixed;
   z-index: 21;
   display: flex;
@@ -8,6 +8,7 @@
   align-content: center;
   align-items: center;
   color: #364f6b;
+  background-color: rgb(245, 245, 245);
   gap: 10px;
   margin-bottom: 30px;
   padding: 0;
