@@ -25,6 +25,10 @@
   z-index: 21;
 }
 
+.projectInfo a:hover {
+  color: rgb(252, 81, 133);
+}
+
 a .projectPhoto {
   width: 100%;
   max-height: 520px;
@@ -42,5 +46,9 @@ a .projectPhoto:hover {
 }
 
 .projectInfo i {
+  transition: transform 1.5s;
+}
+
+.projectInfo i:hover {
   transition: transform 1.5s;
 }

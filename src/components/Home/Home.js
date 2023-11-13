@@ -2,12 +2,11 @@ import classes from "./Home.module.css";
 import { portfolioData } from "../../data/portfolioData";
 import ProjectBox from "./ProjectBox/ProjectBox";
 import Navbar from "../Navbar/Navbar";
-import Contact from "../Contact/Contact";
 
 const Home = () => {
   return (
     <div className={classes.homePage}>
-      <Navbar contactLink={"#contact"} />
+      <Navbar />
       <section className={classes.homeSection}>
         {portfolioData.map((item) => (
           <ProjectBox
@@ -18,7 +17,6 @@ const Home = () => {
           />
         ))}
       </section>
-      <Contact />
     </div>
   );
 };

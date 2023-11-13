@@ -16,7 +16,7 @@ const Navbar = ({ contactLink }) => {
           <a href="/about">ABOUT ME</a>
         </li>
         <li className={classes.menuItem}>
-          <a href={contactLink}>CONTACT</a>
+          <a href="/contact">CONTACT</a>
         </li>
       </ul>
     </header>
