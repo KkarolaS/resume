@@ -1,26 +1,11 @@
 import classes from "./AboutMeSection.module.css";
-import whoosh from "../../../assets/sounds/whoosh.wav";
-import { useSound } from "use-sound";
 
-const AboutMeSection = () => {
-  const [playWhoosh, { stop }] = useSound(whoosh, {
-    volume: 0.6,
-    interrupt: true,
-  });
-
-  const handleMouseOver = () => {
-    playWhoosh();
-  };
-
-  const handleMouseOut = () => {
-    stop();
-  };
-
+const AboutMeSection = ({ handlePlaying, handleStopPlaying }) => {
   return (
     <section
       className={classes.aboutMe}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
+      onMouseOver={() => handlePlaying()}
+      onMouseOut={() => handleStopPlaying()}
     >
       <img
         src={require("../../../assets/photo/my_cv_photo.jpg")}

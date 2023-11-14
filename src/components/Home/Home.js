@@ -7,6 +7,8 @@ import { useState } from "react";
 const Home = () => {
   const [isMute, setIsMute] = useState(false);
 
+  console.log(isMute);
+
   const handlePlaying = (status) => {
     console.log(status);
     setIsMute(status);

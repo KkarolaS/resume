@@ -1,12 +1,15 @@
 import classes from "./Navbar.module.css";
 import { useState } from "react";
 
-const Navbar = ({ getPlayingStatus }) => {
-  const [isOn, setIsOn] = useState(true);
+const Navbar = ({ getPlayingStatus, isDisabled }) => {
+  const [isMute, setIsMute] = useState(false);
+
+  console.log(isMute);
 
   const handleMuteClick = () => {
-    setIsOn((prevValue) => !prevValue);
-    getPlayingStatus(isOn);
+    setIsMute((prevValue) => !prevValue);
+    getPlayingStatus(!isMute);
+    console.log(!isMute);
   };
 
   return (
@@ -27,9 +30,17 @@ const Navbar = ({ getPlayingStatus }) => {
           <a href="/contact">CONTACT</a>
         </li>
       </ul>
-      <button onClick={handleMuteClick}>{isOn ? "Mute" : "UNMute"}</button>
+      <button
+        className={classes.soundBtn}
+        onClick={isDisabled ? null : () => handleMuteClick()}
+        disabled={isDisabled}
+      >
+        {isMute ? "🔕" : "🔔"}
+      </button>
     </header>
   );
 };
 
 export default Navbar;
+
+//  TODO add flow for mute/unmute status during diffrent pages

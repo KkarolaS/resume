@@ -2,30 +2,15 @@ import classes from "./ExperienceInfoWrapper.module.css";
 import { knowledgeData } from "../../../data/knowledgeData";
 import { educationData } from "../../../data/educationData";
 import { experienceData } from "../../../data/experienceData";
-import whoosh from "../../../assets/sounds/whoosh.wav";
-import { useSound } from "use-sound";
 
-const ExperienceInfoWrapper = () => {
-  const [playWhoosh, { stop }] = useSound(whoosh, {
-    volume: 0.6,
-    interrupt: true,
-  });
-
-  const handleMouseOver = () => {
-    playWhoosh();
-  };
-
-  const handleMouseOut = () => {
-    stop();
-  };
-
+const ExperienceInfoWrapper = ({ handlePlaying, handleStopPlaying }) => {
   return (
-    <div
-      className={classes.boxWrapper}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-    >
-      <div className={classes.infoBox}>
+    <div className={classes.boxWrapper}>
+      <div
+        className={classes.infoBox}
+        onMouseOver={() => handlePlaying()}
+        onMouseOut={() => handleStopPlaying()}
+      >
         <h2 className={classes.infoTitle}>
           <i className="fa-solid fa-gears fa-xl"></i>Technical Skills
         </h2>
@@ -35,7 +20,11 @@ const ExperienceInfoWrapper = () => {
           ))}
         </ul>
       </div>
-      <div className={classes.infoBox}>
+      <div
+        className={classes.infoBox}
+        onMouseOver={() => handlePlaying()}
+        onMouseOut={() => handleStopPlaying()}
+      >
         <h2 className={classes.infoTitle}>
           <i className="fa-solid fa-user-graduate fa-xl"></i>Education
         </h2>
@@ -69,7 +58,11 @@ const ExperienceInfoWrapper = () => {
           })}
         </div>
       </div>
-      <div className={classes.infoBox}>
+      <div
+        className={classes.infoBox}
+        onMouseOver={() => handlePlaying()}
+        onMouseOut={() => handleStopPlaying()}
+      >
         <h2 className={classes.infoTitle}>
           <i className="fa-solid fa-suitcase fa-lg"></i>Experience
         </h2>

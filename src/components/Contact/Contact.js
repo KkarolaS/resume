@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar";
 const Contact = () => {
   return (
     <div className={classes.contact}>
-      <Navbar />
+      <Navbar isDisabled={true} />
       <section className={classes.contactSection}>
         <div className={classes.contactHeader}></div>
         <div className={classes.infoWrapper}>

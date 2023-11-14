@@ -7,7 +7,7 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isPlaying }) => {
   const [playWhoosh, { stop }] = useSound(whoosh, {
     volume: 0.6,
     interrupt: true,
-    soundEnabled: isPlaying,
+    soundEnabled: !isPlaying,
   });
 
   const [isHovered, setIsHovered] = useState(false);
@@ -15,6 +15,7 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isPlaying }) => {
   const handleMouseOver = () => {
     playWhoosh();
     setIsHovered(true);
+    console.log(isPlaying);
   };
 
   const handleMouseOut = () => {
