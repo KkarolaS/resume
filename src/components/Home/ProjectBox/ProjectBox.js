@@ -3,13 +3,14 @@ import whoosh from "../../../assets/sounds/whoosh.wav";
 import { useSound } from "use-sound";
 import { useState } from "react";
 
-const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
+const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isPlaying }) => {
   const [playWhoosh, { stop }] = useSound(whoosh, {
     volume: 0.6,
     interrupt: true,
+    soundEnabled: isPlaying,
   });
 
-  const [isHovered, setIsHovered] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseOver = () => {
     playWhoosh();
@@ -34,11 +35,16 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink }) => {
       </p>
       <div className={classes.infoWrapper}>
         <p className={classes.projectInfo}>
-          <a href={gitHubLink} rel="noreferrer" target={"_blank"}>
+          <a
+            className={classes.gitHubLogo}
+            href={gitHubLink}
+            rel="noreferrer"
+            target={"_blank"}
+          >
             <i
               style={isHovered ? { transform: "scale(1.2)" } : null}
               className="fa-brands fa-github fa-2xl"
-            ></i>{" "}
+            ></i>
           </a>
         </p>
       </div>

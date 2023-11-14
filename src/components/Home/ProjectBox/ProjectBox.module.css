@@ -45,10 +45,6 @@ a .projectPhoto:hover {
   z-index: 21;
 }
 
-.projectInfo i {
-  transition: transform 1.5s;
-}
-
-.projectInfo i:hover {
+.gitHubLogo i {
   transition: transform 1.5s;
 }

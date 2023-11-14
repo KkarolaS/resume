@@ -1,6 +1,14 @@
 import classes from "./Navbar.module.css";
+import { useState } from "react";
 
-const Navbar = ({ contactLink }) => {
+const Navbar = ({ getPlayingStatus }) => {
+  const [isOn, setIsOn] = useState(true);
+
+  const handleMuteClick = () => {
+    setIsOn((prevValue) => !prevValue);
+    getPlayingStatus(isOn);
+  };
+
   return (
     <header className={classes.navbar}>
       <div className={classes.titleWrapper}>
@@ -19,6 +27,7 @@ const Navbar = ({ contactLink }) => {
           <a href="/contact">CONTACT</a>
         </li>
       </ul>
+      <button onClick={handleMuteClick}>{isOn ? "Mute" : "UNMute"}</button>
     </header>
   );
 };

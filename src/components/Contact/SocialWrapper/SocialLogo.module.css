@@ -1,7 +1,15 @@
 .lkLink {
   color: #0d67c1;
+  transition: transform 1.5s;
 }
 
 .xLink {
   color: rgb(7, 128, 134);
+  transition: transform 1.5s;
+}
+
+.lkLink i:hover,
+.xLink i:hover {
+  color: rgb(245, 245, 245);
+  transform: scale(1.2);
 }
