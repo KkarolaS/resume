@@ -33,7 +33,7 @@ const AboutMeSection = ({ handlePlaying, handleStopPlaying }) => {
           </h3>
           <ul className={classes.skillsList}>
             <li>Quick learnings skills</li>
-            <li>Time managment skills</li>
+            <li>Time management skills</li>
             <li>Good communication skills</li>
             <li>Team working</li>
             <li>Ability to work under pressure</li>
