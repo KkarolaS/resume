@@ -1,9 +1,9 @@
 .projectsWrapper {
   max-width: 433px;
   max-height: 520px;
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   opacity: 0.8;
 }
 
@@ -29,10 +29,11 @@
   color: rgb(252, 81, 133);
 }
 
-a .projectPhoto {
+.projectPhoto {
   width: 100%;
   max-height: 520px;
   filter: grayscale(65%);
+  position: relative;
   object-fit: cover;
   object-position: 100% 0%;
   transition: transform 1.5s;

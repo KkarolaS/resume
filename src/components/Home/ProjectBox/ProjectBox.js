@@ -15,7 +15,6 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isPlaying }) => {
   const handleMouseOver = () => {
     playWhoosh();
     setIsHovered(true);
-    console.log(isPlaying);
   };
 
   const handleMouseOut = () => {
@@ -29,11 +28,11 @@ const ProjectBox = ({ imageSrc, gitHubLink, netlifyLink, isPlaying }) => {
       onMouseOver={handleMouseOver}
       onMouseOut={handleMouseOut}
     >
-      <p className={classes.projectInfo}>
+      <div className={classes.projectInfo}>
         <a href={netlifyLink} rel="noreferrer" target={"_blank"}>
           <img src={imageSrc} className={classes.projectPhoto} alt="project" />
         </a>
-      </p>
+      </div>
       <div className={classes.infoWrapper}>
         <p className={classes.projectInfo}>
           <a
