@@ -39,7 +39,7 @@ export const portfolioData = [
   {
     id: 7,
     src: require("../assets/image/noteskepper.png"),
-    gitHubLink: "https://github.com/KkarolaS/Empojipedia.git",
+    gitHubLink: "https://github.com/KkarolaS/Notesbook_project_EJS",
     netlifyLink: "https://github.com/KkarolaS/Notesbook_project_EJS.git",
   },
   {
