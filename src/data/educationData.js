@@ -1,28 +1,30 @@
 export const educationData = [
   {
     id: "e1",
-    name: "JS, React, HTML&CSS Bootcamp with Future Collar",
-    date: "06.2023 - 10.2023",
-    description: "360 hours",
+    name: "Mentee Program with Dare IT",
+    date: "11/2023 - 03/2024",
+    description:
+      "Dare IT Mentoring is a 4-month program where I work with my mentor on my Frontend Developer skills. Nearly 1,000 candidates applied for the 120 spots.",
     important: true,
   },
-  // {
-  //   id: "e2",
-  //   name: "Frontend Bootcamp with Angela Yu",
-  //   date: "07.2023 - 12.2023",
-  //   description: "62 hours",
-  // },
+  {
+    id: "e2",
+    name: "JS, React, HTML&CSS Bootcamp with Future Collar",
+    date: "06/2023 - 10/2023",
+    description: "360 hours",
+  },
   {
     id: "e3",
     name: "Attorney's Counsel",
-    date: "10.2015 - 06.2019?",
+    date: "10/2015 - 06/2019",
     description: "Attorney at law",
   },
   {
     id: "e4",
     name: "Law & Administration Section at Silesia University",
-    date: "10.2015 - 06.2019?",
-    description: "Master Degree in Law",
+    date: "10/2010 - 06/2015",
+    description:
+      "Master Degree in Law (Award of Oktawia Górniok for outstanding master degree dissertation)",
     last: true,
   },
 ];

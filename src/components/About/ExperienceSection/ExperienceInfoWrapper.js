@@ -76,13 +76,16 @@ const ExperienceInfoWrapper = ({ handlePlaying, handleStopPlaying }) => {
                 <i className="fa-regular fa-calendar-days fa-lg"></i>
                 {data.date}
               </h6>,
+              <p className={classes.description} key={`${data.id}p`}>
+                {data.companyName}
+              </p>,
               <p
                 className={
                   data.last ? classes.lastDescription : classes.description
                 }
                 key={`${data.id}p`}
               >
-                {data.companyName}
+                {data.description}
               </p>,
             ];
           })}

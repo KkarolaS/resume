@@ -32,13 +32,13 @@ const AboutMeSection = ({ handlePlaying, handleStopPlaying }) => {
             <i className="fa-solid fa-gears fa-lg"></i>Personal Skills
           </h3>
           <ul className={classes.skillsList}>
-            <li>Quick learnings skills</li>
-            <li>Time management skills</li>
-            <li>Good communication skills</li>
-            <li>Team working</li>
+            <li>Quick learnings skills - learned fluent German in 2 years</li>
+            <li>Critical and analytical thinking</li>
+            <li>Excellent collaboration and communications skills </li>
+            <li>Ability to deal with conflict situations </li>
+            <li>Excellent time management and projects leadership skills</li>
             <li>Ability to work under pressure</li>
-            <li>Ability to deal with conflict situation</li>
-            <li>Ability to lead projects</li>
+            <li>Perfect skills in conducting training sessions</li>
           </ul>
         </div>
         <div className={classes.languageInfo}>
@@ -57,6 +57,23 @@ const AboutMeSection = ({ handlePlaying, handleStopPlaying }) => {
           <div className={classes.levelWrapper}>
             <div className={classes.level}>Native</div>
           </div>
+        </div>
+        <div className={classes.skillsWrapper}>
+          <h3 className={classes.title}>
+            <i className="fa-solid fa-gem fa-lg"></i>Passions
+          </h3>
+          <ul className={classes.skillsList}>
+            <li>
+              Fantasy and SFI Literature (Harry Potter fan before it becomes
+              trendy)
+            </li>
+            <li>Board games (Eurogame, Coop)</li>
+            <li>Escape rooms</li>
+            <li>Ashtanga Yoga</li>
+            <li>Acrylic painting</li>
+            <li>Ancient history</li>
+            <li>Learning foreign languages</li>
+          </ul>
         </div>
       </div>
     </section>
