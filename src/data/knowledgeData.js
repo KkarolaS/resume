@@ -29,10 +29,14 @@ export const knowledgeData = [
   },
   {
     id: 8,
-    name: "Data protection law & regulations (GDPR)",
+    name: "Scrum",
   },
   {
     id: 9,
+    name: "Data protection law & regulations (GDPR)",
+  },
+  {
+    id: 10,
     name: "EDP: Microsoft Office",
   },
 ];

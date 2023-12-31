@@ -1,15 +1,13 @@
+import { isMuted } from "../../data/isMuted";
 import classes from "./Navbar.module.css";
 import { useState } from "react";
 
 const Navbar = ({ getPlayingStatus, isDisabled }) => {
-  const [isMute, setIsMute] = useState(false);
-
-  console.log(isMute);
+  const [isMute, setIsMute] = useState(isMuted);
 
   const handleMuteClick = () => {
     setIsMute((prevValue) => !prevValue);
     getPlayingStatus(!isMute);
-    console.log(!isMute);
   };
 
   return (

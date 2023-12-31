@@ -5,9 +5,10 @@ import ExperienceInfoWrapper from "./ExperienceSection/ExperienceInfoWrapper";
 import whoosh from "../../assets/sounds/whoosh.wav";
 import { useSound } from "use-sound";
 import { useState } from "react";
+import { isMuted } from "../../data/isMuted";
 
 const About = () => {
-  const [isMute, setIsMute] = useState(false);
+  const [isMute, setIsMute] = useState(isMuted);
 
   const [playWhoosh, { stop }] = useSound(whoosh, {
     volume: 0.6,
@@ -15,10 +16,7 @@ const About = () => {
     soundEnabled: !isMute,
   });
 
-  console.log(isMute);
-
   const handlePlaying = (status) => {
-    console.log(status);
     setIsMute(status);
   };
 

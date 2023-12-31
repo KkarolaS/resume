@@ -83,7 +83,7 @@ const ExperienceInfoWrapper = ({ handlePlaying, handleStopPlaying }) => {
                 className={
                   data.last ? classes.lastDescription : classes.description
                 }
-                key={`${data.id}p`}
+                key={`${data.id}pA`}
               >
                 {data.description}
               </p>,

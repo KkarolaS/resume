@@ -3,14 +3,12 @@ import { portfolioData } from "../../data/portfolioData";
 import ProjectBox from "./ProjectBox/ProjectBox";
 import Navbar from "../Navbar/Navbar";
 import { useState } from "react";
+import { isMuted } from "../../data/isMuted";
 
 const Home = () => {
-  const [isMute, setIsMute] = useState(false);
-
-  console.log(isMute);
+  const [isMute, setIsMute] = useState(isMuted);
 
   const handlePlaying = (status) => {
-    console.log(status);
     setIsMute(status);
   };
 
