@@ -22,10 +22,10 @@ const Navbar = ({ getPlayingStatus, isDisabled }) => {
           <a href="/">PORTFOLIO</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/about">ABOUT ME</a>
+          <a href="./about">ABOUT ME</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/contact">CONTACT</a>
+          <a href="./contact">CONTACT</a>
         </li>
       </ul>
       <button
@@ -40,5 +40,3 @@ const Navbar = ({ getPlayingStatus, isDisabled }) => {
 };
 
 export default Navbar;
-
-//  TODO add flow for mute/unmute status during diffrent pages
