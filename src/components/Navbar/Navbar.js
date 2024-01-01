@@ -19,13 +19,13 @@ const Navbar = ({ getPlayingStatus, isDisabled }) => {
       </div>
       <ul className={classes.menu}>
         <li className={classes.menuItem}>
-          <a href="/resume">PORTFOLIO</a>
+          <a href="/">PORTFOLIO</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/resume/about">ABOUT ME</a>
+          <a href="/about">ABOUT ME</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/resume/contact">CONTACT</a>
+          <a href="/contact">CONTACT</a>
         </li>
       </ul>
       <button
