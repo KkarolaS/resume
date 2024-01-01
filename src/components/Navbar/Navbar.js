@@ -22,10 +22,10 @@ const Navbar = ({ getPlayingStatus, isDisabled }) => {
           <a href="/">PORTFOLIO</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/about">ABOUT ME</a>
+          <a href="/resume/about">ABOUT ME</a>
         </li>
         <li className={classes.menuItem}>
-          <a href="/contact">CONTACT</a>
+          <a href="/resume/contact">CONTACT</a>
         </li>
       </ul>
       <button
