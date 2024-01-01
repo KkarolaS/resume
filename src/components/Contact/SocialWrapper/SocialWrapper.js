@@ -12,7 +12,7 @@ const SocialWrapper = () => {
       <SocialLogo
         className={"fa-brands fa-square-xing fa-2xl"}
         isLinkedIn={false}
-        link={"https://www.xing.com/"}
+        link={"https://www.xing.com/profile/Karolina_Sobczak017391"}
       />
     </div>
   );
