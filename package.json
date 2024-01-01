@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://kkarolaS.github.io/resume",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
