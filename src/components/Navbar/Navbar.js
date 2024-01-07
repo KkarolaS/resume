@@ -15,7 +15,7 @@ const Navbar = ({ getPlayingStatus, isDisabled }) => {
       <div className={classes.titleWrapper}>
         <p className={classes.title}>KAROLINA</p>
         <p className={classes.title}>SOBCZAK</p>
-        <p className={classes.subtitle}>CV</p>
+        <p className={classes.subtitle}>RESUME</p>
       </div>
       <ul className={classes.menu}>
         <li className={classes.menuItem}>

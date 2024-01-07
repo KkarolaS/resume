@@ -11,13 +11,50 @@ const ExperienceInfoWrapper = ({ handlePlaying, handleStopPlaying }) => {
         onMouseOver={() => handlePlaying()}
         onMouseOut={() => handleStopPlaying()}
       >
+        <h3 className={classes.summaryTitle}>
+          There are no problems without solutions. There are only undiscovered
+          methods.
+        </h3>
+        <p className={`${classes.list} ${classes.summary}`}>
+          Passionate Frontend Developer after Bootcamp and currently during a
+          Mentee IT Program. I’m also data protection law lawyer.
+          <span>
+            I’m characterized by perseverance, independence, openness to finding
+            new solutions, learning new competences and empathy towards others.
+          </span>
+          <span>
+            I don't easily give up and responsibility is one of the most
+            important part of my personality.
+          </span>
+        </p>
+      </div>
+      <div
+        className={classes.infoBox}
+        onMouseOver={() => handlePlaying()}
+        onMouseOut={() => handleStopPlaying()}
+      >
         <h2 className={classes.infoTitle}>
           <i className="fa-solid fa-gears fa-xl"></i>Technical Skills
         </h2>
         <ul className={`${classes.list} ${classes.infoList}`}>
-          {knowledgeData.map((data) => (
-            <li key={data.id}>{data.name}</li>
-          ))}
+          {knowledgeData.map((data) =>
+            data.importance ? (
+              <p key={data.id} className={classes.importanceData}>
+                {data.name}
+              </p>
+            ) : null
+          )}
+        </ul>
+        <ul
+          className={`${classes.list} ${classes.infoList} ${classes.noImportantList}`}
+        >
+          {knowledgeData.map((data) =>
+            !data.importance ? (
+              <p key={data.id} className={classes.noImportanceData}>
+                {data.name}
+              </p>
+            ) : null
+          )}
         </ul>
       </div>
       <div

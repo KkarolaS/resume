@@ -11,20 +11,20 @@ export const educationData = [
     id: "e2",
     name: "JS, React, HTML&CSS Bootcamp with Future Collar",
     date: "06/2023 - 10/2023",
-    description: "360 hours",
+    description: "360 hours intensive course",
   },
   {
     id: "e3",
     name: "Attorney's Counsel",
     date: "10/2015 - 06/2019",
-    description: "Attorney at law",
+    description: "Degree: Attorney at law",
   },
   {
     id: "e4",
     name: "Law & Administration Section at Silesia University",
     date: "10/2010 - 06/2015",
     description:
-      "Master Degree in Law (Award of Oktawia Górniok for outstanding master degree dissertation)",
+      "Degree: Master Degree in Law (Award of Oktawia Górniok for outstanding master degree dissertation)",
     last: true,
   },
 ];

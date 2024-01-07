@@ -1,73 +1,164 @@
 .navbar {
-  width: 300px;
-  min-height: 100vh;
-  position: fixed;
-  z-index: 21;
+  width: auto;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #364f6b;
   background-color: rgb(245, 245, 245);
   gap: 10px;
-  margin-bottom: 30px;
-  padding: 0;
 }
 
 .titleWrapper {
-  padding: 70px 0px 70px 0px;
-  margin: 10px;
+  margin: 5px;
+  max-width: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .title {
-  font-size: 24px;
-  margin-top: 10px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
 }
+
 .subtitle {
-  margin-top: 20px;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 200;
-  align-self: center;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .menuItem {
-  width: 300px;
-  display: flex;
+  border-left: 2px solid rgb(252, 81, 133);
+  padding-left: 10px;
 }
 
 .menuItem a {
-  width: 100%;
-  padding: 10px 0;
   text-decoration: none;
   color: #364f6b;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  text-align: center;
-  justify-self: center;
-}
-
-.menuItem a:hover {
-  width: 300px;
-  background-color: rgb(252, 81, 133);
-  color: white;
 }
 
 .soundBtn {
-  width: 45px;
-  aspect-ratio: 1;
+  width: 31px;
+  height: 31px;
   background-color: rgb(63, 193, 201);
   border-radius: 50%;
-  font-size: 25px;
-  position: fixed;
-  bottom: 40px;
+  font-size: 13px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 600px) {
+  .titleWrapper {
+    margin: 10px;
+    max-width: 160px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .menuItem a {
+    font-size: 15px;
+  }
+
+  .soundBtn {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 992px) {
+  .navbar {
+    width: 300px;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 21;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: #364f6b;
+    background-color: rgb(245, 245, 245);
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .titleWrapper {
+    padding: 70px 0px 70px 0px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  .subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 200;
+    align-self: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .menuItem {
+    width: 300px;
+    display: flex;
+  }
+
+  .menuItem a {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #364f6b;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .menuItem a:hover {
+    width: 300px;
+    background-color: rgb(252, 81, 133);
+    color: white;
+  }
+
+  .soundBtn {
+    width: 45px;
+    aspect-ratio: 1;
+    background-color: rgb(63, 193, 201);
+    border-radius: 50%;
+    font-size: 25px;
+    position: fixed;
+    bottom: 40px;
+  }
 }

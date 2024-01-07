@@ -15,9 +15,6 @@ const AboutMeSection = ({ handlePlaying, handleStopPlaying }) => {
       <div className={classes.dataWrapper}>
         <div className={classes.addressData}>
           <p className={`${classes.title} ${classes.addressText}`}>
-            <i className="fa-solid fa-house-chimney-window fa-lg"></i>Tychy
-          </p>
-          <p className={`${classes.title} ${classes.addressText}`}>
             <i className="fa-solid fa-envelope fa-lg"></i>
             <a href="mailto:kkarolinasobczak@gmail.com">
               kkarolinasobczak@gmail.com
