@@ -16,9 +16,8 @@ const Contact = () => {
               Do you like my projects and find me as a suitable candidate for
               the position?
             </p>
-            <p className={classes.contactText}>
-              Send me an email or call me 👇
-            </p>
+            <hr></hr>
+            <p className={classes.contactText}>Send an email or call me 👇</p>
             <a href="mailto:kkarolinasobczak@gmail.com">
               kkarolinasobczak@gmail.com
             </a>
