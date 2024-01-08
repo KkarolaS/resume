@@ -1,15 +1,22 @@
 .aboutPage {
-  max-width: 1600px;
-  height: auto;
-  padding-bottom: 17px;
   background-color: rgb(245, 245, 245);
 }
 
 .aboutSection {
-  height: auto;
-  margin-left: 300px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 992px) {
+  .aboutPage {
+    padding-bottom: 17px;
+  }
+
+  .aboutSection {
+    flex-direction: row;
+  }
 }
