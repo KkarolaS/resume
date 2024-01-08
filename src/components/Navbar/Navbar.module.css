@@ -93,55 +93,48 @@
     min-height: 100vh;
     position: fixed;
     z-index: 21;
-    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     align-content: center;
-    align-items: center;
-    color: #364f6b;
-    background-color: rgb(245, 245, 245);
-    gap: 10px;
     margin-bottom: 30px;
-    padding: 0;
   }
 
   .titleWrapper {
-    padding: 70px 0px 70px 0px;
     margin: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 70px 0px 70px 0px;
+    max-width: 150px;
+    justify-content: center;
   }
 
   .title {
     font-size: 24px;
-    margin-top: 10px;
     font-weight: 500;
+    margin-top: 10px;
   }
+
   .subtitle {
     margin-top: 20px;
     font-size: 18px;
-    font-weight: 200;
-    align-self: center;
   }
 
   .menu {
-    display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;
+    gap: 0;
   }
 
   .menuItem {
     width: 300px;
     display: flex;
+    border-left: none;
+    padding: 0;
   }
 
   .menuItem a {
     width: 100%;
     padding: 10px 0;
-    text-decoration: none;
     color: #364f6b;
     font-size: 16px;
-    font-weight: 400;
     text-align: center;
     justify-self: center;
   }
@@ -154,9 +147,7 @@
 
   .soundBtn {
     width: 45px;
-    aspect-ratio: 1;
-    background-color: rgb(63, 193, 201);
-    border-radius: 50%;
+    height: 45px;
     font-size: 25px;
     position: fixed;
     bottom: 40px;

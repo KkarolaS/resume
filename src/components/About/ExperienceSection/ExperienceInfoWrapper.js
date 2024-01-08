@@ -11,13 +11,9 @@ const ExperienceInfoWrapper = ({ handlePlaying, handleStopPlaying }) => {
         onMouseOver={() => handlePlaying()}
         onMouseOut={() => handleStopPlaying()}
       >
-        <h3 className={classes.summaryTitle}>
-          There are no problems without solutions. There are only undiscovered
-          methods.
-        </h3>
         <p className={`${classes.list} ${classes.summary}`}>
-          Passionate Frontend Developer after Bootcamp and currently during a
-          Mentee IT Program. I’m also data protection law lawyer.
+          I'm a passionate Frontend Developer after Bootcamp and currently
+          during a Mentee IT Program. I’m also data protection law lawyer.
           <span>
             I’m characterized by perseverance, independence, openness to finding
             new solutions, learning new competences and empathy towards others.
