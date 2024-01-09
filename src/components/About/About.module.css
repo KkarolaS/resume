@@ -9,6 +9,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  .aboutSection {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -18,5 +21,6 @@
 
   .aboutSection {
     flex-direction: row;
+    align-items: flex-start;
   }
 }

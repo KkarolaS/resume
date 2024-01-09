@@ -116,6 +116,9 @@
 /*  */
 /*  */
 @media screen and (min-width: 600px) {
+  .aboutMe {
+    min-width: 80%;
+  }
 }
 /*  */
 /*  */
@@ -124,8 +127,9 @@
 /*  */
 @media screen and (min-width: 992px) {
   .aboutMe {
+    min-width: 300px;
     max-width: 300px;
-    margin: 20px 2px 20px 300px;
+    margin: 20px 8px 20px 300px;
     border-radius: 5px;
     gap: 10px;
     transition: transform 1s;
@@ -177,106 +181,29 @@
 /*  */
 @media screen and (min-width: 1200px) {
   .aboutMe {
-    max-width: 400px;
-    margin: 20px 2px 20px 300px;
+    min-width: 400px;
     border-radius: 5px;
-    gap: 10px;
-    transition: transform 1s;
-  }
-
-  .aboutMe:hover {
-    transform: scale(1.01) rotateZ(-0.5deg);
+    padding: 0;
   }
 
   .photo {
-    max-width: 400px;
-    object-fit: contain;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    min-width: 400px;
   }
 
   .dataWrapper {
     padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 17px;
   }
 
   .title {
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    gap: 22px;
-    align-items: center;
     margin: 5px 0 0 0;
-  }
-
-  .addressText {
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .addressData,
-  .skillsWrapper,
-  .languageInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  .skillsWrapper,
-  .languageInfo {
-    border-top: 1px solid rgba(17, 57, 70, 0.286);
   }
 
   .addressData {
     font-size: 17px;
-    font-weight: 500;
-  }
-
-  .addressData a {
-    text-decoration: none;
-    color: rgb(17, 57, 70);
-  }
-
-  .addressData a:hover {
-    color: #fc5185;
-  }
-
-  .skillsWrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skillsList {
-    font-size: 17px;
-    list-style-type: disc;
-    line-height: 1.5;
-    margin: 10px 0 10px 5px;
-  }
-
-  .skillsList li {
-    margin-left: 15px;
   }
 
   .levelWrapper {
     width: 360px;
-    height: 18px;
-    background-color: rgba(228, 228, 228, 0.935);
-    border-radius: 16px;
-  }
-
-  .level {
-    height: 20px;
-    background-color: rgb(63, 193, 201);
-    border-radius: 16px;
-    color: rgba(255, 255, 255, 0.855);
-    font-style: italic;
-    font-size: 15px;
-    padding: 0 10px;
-    line-height: 20px;
   }
 
   .levelEng {
